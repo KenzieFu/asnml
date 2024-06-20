@@ -15,7 +15,10 @@ RUN pip install --no-cache-dir \
     tensorflow \
     keras \
     numpy \
-    pandas
+    pandas \
+    scikit-learn \
+    pymysql \
+    fastapi_pagination
 
 
 # Copy project files
@@ -24,4 +27,4 @@ COPY . .
 EXPOSE 8000
 
 # Run the application using Gunicorn
-CMD ["uvicorn", "main:app", "--reload"]
+CMD ["uvicorn", "main:app","--reload", "--host", "0.0.0.0", "--port", "8000"]
