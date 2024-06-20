@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pydantic
+sqlalchemy
+python-dotenv
+google-cloud-storage
+tensorflow
+keras
+numpy
+pandas
+scikit-learn
+pymysql
+fastapi_pagination
